@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>libary</title>
+</head>
+<body>
+
+    <!-------------------Header------------------->
+    <header class="container">    
+<div class="nav">
+    <h1>Kindle<span>WOOD</span></h1>
+    <h3>So Many books,So little time</h3>
+                </div>
+        
+
+    </header>
+    <!-------------------Header------------------->
+
+
+
+
+
+
+
+
+    <!--------------------Main--------------------->
+    <main>
+        <div>
+            
+               
+                    
+                <div class="box">
+                  <form id="Form" name="Form">  <!-- TITLE -->
+                    <div class="MiniBox test" id="a">
+                        <label id="lbl">Title :</label><br>
+                        <input type="text" id="titl" class="title" />
+                        <p class="validation" ></p>
+                    </div>
+                    <br>
+                    <!-- AUTHOR -->
+                    <div class="MiniBox" id="b">
+                        <label>Author :</label><br>
+                        <input type="text" id="auteur" class="title"  />
+                        <p class="validation" ></p>
+                    </div>
+                    <br>
+                    <!-- PRICE -->
+                    <div class="MiniBox" id="c">
+                        <label>Price :</label> <br>
+                        <input type="text" id="prix" />
+                        <p class="validation" id="msgPrix" ></p>
+                    </div>
+                    <br>
+                    <!-- DATE -->
+                    <div class="MiniBox" id="d">
+                        <label>Publication Date :</label><br> 
+                        <input type="date" id="date" />
+                        <p class="validation" ></p>
+                    </div>
+                    <br>
+                    <!-- DROPDOWNLIST -->
+                    <div class="MiniBox" id="e">
+                        <label>Language :</label><br>
+                        <select id="langue" name="langue">
+                            <option disabled selected hidden value="0">-- select langue--</option>
+                            <option value="Français">Français</option>
+                            <option value="Anglais">Anglais</option>
+                            <option value="Arabe">Arabe</option>
+                        </select>
+                        <p id="lng" ></p>
+                    </div>
+                    <br><br>
+                    <!--RADIO BUTTON -->
+                    <div class="type_container" id="input2">
+                        <h3>Type :</h3>
+                        <label for="Roman" class="type_label1">Roman</label>
+                        <input type="radio" id="roman" name="Type" value="Roman" class="typeE">
+                        <label for="Essai" class="type_label1">Essai</label>
+                        <input type="radio" id="essai" name="Type" value="Essai" class="typeE">
+                        <label for="Bande-Dessinée" class="type_label1">Bande-Dessinée</label>
+                        <input type="radio" id="bande-dessinée" name="Type" value="Bande-Dessinée" class="typeE">
+                        <label for="Other" class="type_label1">Other</label>
+                        <input type="radio" id="other" name="Type" value="Other" class="typeE">
+                    
+                    </div>
+                  
+                    <br>
+                    <!--Email adress-->>
+                    <div class="MiniBox" id="g">
+                        <label>Email adress:</label><br> 
+                        <input type="email" id="Email" />
+                        <p class= "validation" id="eg"></p>
+                    </div>
+                    <div class="MiniBox" id="btn1">
+                        <input type='submit' value='Add' class="button" id='btn'>
+                        <br>
+                    </div>
+                    <br> 
+                </div>
+                <br>
+            </form>
+
+            <table id="table" >
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Publication Date</th>
+                    <th>Language</th>
+                    <th>Type</th>
+                    <th>email </th>
+                    <th>Delete/Edit</th>
+                </tr>
+            </table>
+            <input type="button" value="print" onclick="print_btn()" id="print">
+    <!--------------------Main--------------------->
+    <script src="script.js"></script>
+
+        </main>
+
+    
+    
+</body>
+</html>
